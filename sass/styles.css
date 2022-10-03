@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 24px;
+  background-color: hsl(185deg, 41%, 84%);
+  font-family: "Space Mono", monospace;
+}
+
+.header__title {
+  text-align: center;
+  color: hsl(186deg, 14%, 43%);
+  font-size: 1em;
+  margin: 30px 0;
+  letter-spacing: 8px;
+}
+
+.calculator-container {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 375px;
+  margin: auto;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.input-section__bill-label {
+  display: block;
+  color: hsl(186deg, 14%, 43%);
+  font-size: 0.75em;
+  margin-bottom: 8px;
+}
+
+.input-section__bill-input {
+  font-family: "Space Mono", monospace;
+  font-size: 1em;
+  text-align: right;
+  caret-color: hsl(172deg, 67%, 45%);
+  border-radius: 4px;
+  padding-right: 10px;
+  border: none;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 30px;
+  background-image: url("../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-color: hsl(189deg, 41%, 97%);
+}
+.input-section__bill-input:hover {
+  cursor: pointer;
+}
+.input-section__bill-input:focus {
+  outline: none;
+  border: 2px solid hsl(172deg, 67%, 45%);
+}
+.input-section__bill-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.btns {
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.btns__legend {
+  display: block;
+  color: hsl(186deg, 14%, 43%);
+  font-size: 0.75em;
+  margin-bottom: 8px;
+}
+.btns__button {
+  width: 147px;
+  height: 50px;
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(189deg, 41%, 97%);
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+}
+.btns__button:hover {
+  cursor: pointer;
+}
+.btns__custom {
+  font-family: "Space Mono", monospace;
+  font-size: 1em;
+  text-align: right;
+  caret-color: hsl(172deg, 67%, 45%);
+  border-radius: 4px;
+  padding-right: 10px;
+  border: none;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 30px;
+  background-image: url(unset);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-color: hsl(189deg, 41%, 97%);
+  text-align: center;
+  color: hsl(186deg, 14%, 43%);
+}
+.btns__custom:hover {
+  cursor: pointer;
+}
+.btns__custom:focus {
+  outline: none;
+  border: 2px solid hsl(172deg, 67%, 45%);
+}
+.btns__custom::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-section__peopel-label {
+  display: block;
+  color: hsl(186deg, 14%, 43%);
+  font-size: 0.75em;
+  margin-bottom: 8px;
+}
+
+.input-section__peopel-input {
+  font-family: "Space Mono", monospace;
+  font-size: 1em;
+  text-align: right;
+  caret-color: hsl(172deg, 67%, 45%);
+  border-radius: 4px;
+  padding-right: 10px;
+  border: none;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 30px;
+  background-image: url("../images/icon-person.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-color: hsl(189deg, 41%, 97%);
+}
+.input-section__peopel-input:hover {
+  cursor: pointer;
+}
+.input-section__peopel-input:focus {
+  outline: none;
+  border: 2px solid hsl(172deg, 67%, 45%);
+}
+.input-section__peopel-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}

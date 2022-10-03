@@ -7,12 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
-  <link rel="stylesheet" href="sass\styles.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="sass\styles.css">  
 </head>
 <body>
   <header class="header">
@@ -29,11 +24,11 @@
         <button class="btns__button">15%</button>
         <button class="btns__button">25%</button>
         <button class="btns__button">50%</button>
-        <input type="number" placeholder="Custom">
+        <input class="btns__custom" type="number" placeholder="Custom">
       </fieldset>
 
-      <label for="peopel" class="input-section__peopel-label">Number of People</label>
-      <input id="peopel" class="input-section__peopel-input" type="number" value="5">
+      <label for="peopel" class="input-section__peopel-label">Number of People <span class="alert">Can't be zero</span></label>
+      <input id="peopel" class="input-section__peopel-input error" type="number" value="5">
     </div>
     <div class="result-section">
       <div class="results">
