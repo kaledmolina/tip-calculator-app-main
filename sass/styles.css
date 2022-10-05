@@ -85,6 +85,7 @@ body {
 }
 .btns__button:hover {
   cursor: pointer;
+  background-color: hsl(185deg, 41%, 84%);
 }
 .btns__custom {
   font-family: "Space Mono", monospace;
@@ -197,10 +198,42 @@ body {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 14px;
   text-align: center;
+  margin: 40px 0;
 }
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+/*-----------------pantalla-web---------------*/
+@media (min-width: 1440px) {
+  .header__title {
+    margin: 160px 0 90px;
+  }
+  .calculator-container {
+    background-color: hsl(0deg, 0%, 100%);
+    width: 900px;
+    display: flex;
+    gap: 50px;
+  }
+  .input-section {
+    flex: 1;
+  }
+  .result-section {
+    flex: 1;
+  }
+  .btns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .btns__button {
+    width: 120px;
+  }
+  .results__tip-value, .results__total-value {
+    font-size: 2em;
+  }
+  .results__total-value {
+    font-size: 2em;
+  }
 }

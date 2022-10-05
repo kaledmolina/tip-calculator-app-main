@@ -43,8 +43,9 @@
         border: none;
         border-radius: 4px;
         &:hover{
-            cursor: pointer;
-        }
+        cursor: pointer;
+        background-color: variables.$Light-grayish-cyan;
+    }
 
     }
     &__custom{
@@ -116,10 +117,47 @@
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 14px;
     text-align: center;
+    margin: 40px 0;
+    
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+/*-----------------pantalla-web---------------*/
+
+
+
+@media (min-width: 1440px){
+    .header__title{        
+        margin: 160px 0 90px;
+    }
+    .calculator-container{
+        background-color: variables.$White;
+        width: 900px;
+        display: flex;
+        gap: 50px;
+    }
+    .input-section{
+        flex: 1;
+    }
+    .result-section{
+        flex: 1;
+    }
+    .btns{
+        grid-template-columns: repeat(3, 1fr);
+        &__button{
+            width: 120px;            
+        }      
+    }
+    .results{
+        &__tip-value{
+            font-size: 2em;
+        }
+        &__total-value{
+            font-size: 2em;
+        }
+        }
 }
