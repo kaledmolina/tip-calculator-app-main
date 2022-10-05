@@ -85,7 +85,10 @@ body {
 }
 .btns__button:hover {
   cursor: pointer;
-  background-color: hsl(185deg, 41%, 84%);
+}
+.btns__button--selected {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
 }
 .btns__custom {
   font-family: "Space Mono", monospace;
