@@ -7,47 +7,49 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
-  <link rel="stylesheet" href="sass/styles.css">  
+  <link rel="stylesheet" href="style.css">  
 </head>
 <body>
-  <header class="header">
-    <h1 class="header__title">SPLI <br> TTER</h1>
-  </header>
-  <section class="calculator-container">
-    <div class="input-section">
-      <label for="bill" class="input-section__bill-label">Bill</label>
-      <input id="bill" class="input-section__bill-input" type="number" value="0">
-      <fieldset class="btns">
-        <legend class="btns__legend">Select Tip %</legend>
-        <button class="btns__button btns__button--selected">5%</button>
-        <button class="btns__button">10%</button>
-        <button class="btns__button">15%</button>
-        <button class="btns__button">25%</button>
-        <button class="btns__button">50%</button>
-        <input class="btns__custom" type="number" placeholder="Custom">
-      </fieldset>
-      <label for="peopel" class="input-section__peopel-label">Number of People <span class="alert"></span></label>
-      <input id="peopel" class="input-section__peopel-input" type="number" value="5">
-    </div>
-    <div class="result-section">
-      <div class="results">
-        <div>
-          <p class="results__tip-amount">Tip Amount</p>
-          <p class="results__tip-person">/ person</p>
+  <div class="logo"><img src="images/logo.svg" alt=""></div>
+    <div class="tip-calculator">
+      <div class="partOne">
+        <label for="">Bill</label>
+        <input type="number" class="input bill-input" id="bill-input">
+        <label for="">Select Tip %</label>
+        <div class="tip">
+          <div class="tips tip-5">5%</div>
+          <div class="tips tip-10 active-tip">10%</div>
+          <div class="tips tip-15">15%</div>
+          <div class="tips tip-25">25%</div>
+          <div class="tips tip-50">50%</div>
+          <div id="tip-custom"> <input type="number" class="tip-custom" placeholder="Custom"> </div>
         </div>
-
-        <p class="results__tip-value">0</p>
-
-        <div>
-          <p class="results__total-amount">Total</p>
-          <p class="results__total-person">/ person</p>
+        <div class="peoplelabel">
+          <label for="">Number of People</label>
+          <label for="" class="error">Can't be zero</label>
         </div>
+        <input type="number" class="input people-input">
+      </div>
 
-        <p class="results__total-value">0</p>    
-      </div> 
-      <button class="result-section__reset">Reset</button>     
+      <div class="result">
+        <div class="tip-amount">
+          <div class="text">
+            <p>Tip Amount</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="tip-amount">$4.24</div>
+        </div>
+        <div class="total">
+          <div class="text">
+            <p>Total</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="total-amount">$32.24</div>
+        </div>
+        <div class="reset">RESET</div>
+      </div>
     </div>
-  </section>  
+  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/kaledmolina" target="_blank">kaled molina</a>.
